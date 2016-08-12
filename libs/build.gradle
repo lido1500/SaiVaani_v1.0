@@ -1,2 +1,2 @@
-configurations.create("default")
-artifacts.add("default", file('androidbootstrap-2.0.1.aar'))
+configurations.maybeCreate("default")
+artifacts.add("default", file('fancybuttons-1.8.1.aar'))
