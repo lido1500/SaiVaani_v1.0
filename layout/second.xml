@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fancy="http://schemas.android.com/apk/res-auto"
+    android:fillViewport="true">
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/relative1"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg123"
+    >
+
+    <ImageView
+        android:id="@+id/backgrd"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"/>
+
+     <ImageView
+        android:id="@+id/img1"
+        android:paddingTop="50dp"
+        android:layout_width="wrap_content"
+        android:layout_height="320dp"
+
+        />
+
+     <com.beardedhen.androidbootstrap.BootstrapLabel
+        android:id="@+id/text"
+        android:layout_below="@+id/img1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|start"
+        android:layout_marginTop="50dp"
+        android:fontFamily="sans-serif-condensed"
+        app:bootstrapBrand="success"
+        app:bootstrapHeading="h3"
+        app:roundedCorners="true"
+        android:textColor="@color/darkpink"
+        android:text=""
+        />
+
+   <!-- <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">-->
+
+        <mehdi.sakout.fancybuttons.FancyButton
+            android:id="@+id/repicButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:paddingRight="10dp"
+            android:layout_gravity="bottom|end"
+            fancy:fb_borderColor="#00AFF0"
+            fancy:fb_borderWidth="1dp"
+            fancy:fb_defaultColor="#0077B5"
+            fancy:fb_focusColor="#eb4924"
+            fancy:fb_fontIconResource="&#xf25a;"
+            fancy:fb_iconPosition="left"
+            fancy:fb_radius="10dp"
+            fancy:fb_text="REPICK"
+            fancy:fb_textColor="#FFFF"
+            android:layout_alignTop="@+id/repyButton"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"/>
+
+
+        <mehdi.sakout.fancybuttons.FancyButton
+            android:id="@+id/repyButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:paddingRight="10dp"
+            android:layout_gravity="bottom|end"
+            fancy:fb_borderColor="#00AFF0"
+            fancy:fb_borderWidth="1dp"
+            fancy:fb_defaultColor="#0077B5"
+            fancy:fb_focusColor="#eb4924"
+            fancy:fb_fontIconResource="&#xf01d;"
+            fancy:fb_iconPosition="left"
+            fancy:fb_radius="10dp"
+            fancy:fb_text="REPLAY"
+            fancy:fb_textColor="#FFFF"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+    <!--</LinearLayout>-->
+</RelativeLayout>
+
+</ScrollView>

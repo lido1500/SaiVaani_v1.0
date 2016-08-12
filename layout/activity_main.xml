@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:fancy="http://schemas.android.com/apk/res-auto"
+    android:fitsSystemWindows="true"
+    tools:context="com.example.dmacs.myapplication.MainActivity">
+
+    <TextView
+        android:id="@+id/message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/credit"
+        android:layout_gravity="top|right"
+        android:src="@drawable/info"
+        app:backgroundTint="@color/turqoise"
+        app:elevation="27dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+      <ImageView
+        android:id="@+id/img"
+        android:src="@drawable/sai1"
+        android:scaleType="fitXY"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <mehdi.sakout.fancybuttons.FancyButton
+        android:id="@+id/btn_preview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:layout_gravity="bottom|end"
+        fancy:fb_borderColor="#0077B5"
+        fancy:fb_borderWidth="1dp"
+        fancy:fb_defaultColor="#0077B5"
+        fancy:fb_focusColor="@color/darkblue"
+        fancy:fb_fontIconResource="&#xf0e0;"
+        fancy:fb_iconPosition="left"
+        fancy:fb_radius="30dp"
+        fancy:fb_text="Pick Me"
+        fancy:fb_textColor="#FFFF" />
+
+  </android.support.design.widget.CoordinatorLayout>
